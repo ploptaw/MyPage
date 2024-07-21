@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Util Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+
+  <body>
+    <div class="dark-mode-container">
+      <span>Darkmode</span>
+      <div class="dark-mode-slider" onclick="toggleDarkMode()"></div>
+    </div>
+    <div class="container">
+      <h1>Util Home</h1>
+      <div class="landing-page">
+        <div class="card card-hover">
+          <h2>Unicode変換</h2>
+          <p>ユニコードエスケープシーケンスを変換します。</p>
+          <a href="unicode-convert.html#convert-to-unicode" class="btn"
+            >変換ページへ</a
+          >
+        </div>
+        <div class="card card-hover">
+          <h2>カラーコード / 装飾コード表</h2>
+          <p>minecraftのカラーコード / 装飾コードの表を表示します。</p>
+          <a href="codelist.html" class="btn">図表ページへ</a>
+        </div>
+        <div class="card card-hover">
+          <h2>抽選</h2>
+          <p>
+            ２種の抽選方法で抽選を行います。当選履歴，残りの数字を確認できます。
+          </p>
+          <a href="lottery.html" class="btn">抽選ページへ</a>
+        </div>
+      </div>
+    </div>
+    <footer>&copy; 2024- ploptaw<br /></footer>
+    <script src="script/common.js"></script>
+  </body>
+</html>

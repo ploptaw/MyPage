@@ -1,0 +1,68 @@
+.lottery-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.lottery-container label {
+  margin-bottom: 10px;
+}
+
+.lottery-container input[type="number"] {
+  width: 100px;
+  padding: 5px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.lottery-container #result {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.lottery-container #history {
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+.lottery-container #left-over {
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+/* ボタンのスタイル */
+.lottery-container #start-btn {
+  background-color: #9281dd;
+  color: white;
+}
+
+.lottery-container #start-btn:hover {
+  background-color: #9589ca;
+}
+
+.lottery-container #reset-btn {
+  background-color: #664bdd;
+  color: white;
+}
+
+.lottery-container #reset-btn:hover {
+  background-color: #543eb4;
+}
+
+.lottery-container #exclude-drawn-btn {
+  background-color: #7a64dd;
+  color: white;
+}
+
+.lottery-container #exclude-drawn-btn:hover {
+  background-color: #6250b4;
+}
+
+.lottery-container input[type="number"] {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+  font-size: 1rem;
+}

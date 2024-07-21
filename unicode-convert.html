@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ユニコードエスケープシーケンス変換</title>
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/unicode-convert.css" />
+  </head>
+
+  <body>
+    <button class="home-button" onclick="window.location.href='index.html'">
+      戻る
+    </button>
+    <div class="dark-mode-container">
+      <span>Darkmode</span>
+      <div class="dark-mode-slider" onclick="toggleDarkMode()"></div>
+    </div>
+    <div class="container">
+      <h1>ユニコードエスケープシーケンス変換</h1>
+      <h2>変換</h2>
+      <label for="input-text">変換したい文字列：</label>
+      <textarea id="input-text"></textarea>
+      <button class="convert-button" onclick="convertToUnicodeEscape()">
+        変換する
+      </button>
+      <div id="output"></div>
+
+      <h2>逆変換</h2>
+      <label for="input-unicode"
+        >変換したいユニコードエスケープシーケンス：</label
+      >
+      <textarea id="input-unicode"></textarea>
+      <button class="reverse-button" onclick="convertToNormalText()">
+        逆変換する
+      </button>
+      <div id="output-unicode"></div>
+
+      <h2>§ to & Converter</h2>
+      <label for="section-text">変換したい文字列：</label>
+      <textarea id="section-text"></textarea>
+      <button class="convert-andbutton" onclick="convertsection()">
+        変換する
+      </button>
+      <div id="result"></div>
+
+      <div class="table-container">
+        <table class="history-table">
+          <thead>
+            <tr>
+              <th>文字列 / Unicode</th>
+              <th>変換結果</th>
+              <th>操作</th>
+              <th>日時</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+    <footer>&copy; 2024- ploptaw<br /></footer>
+
+    <script src="script/common.js"></script>
+    <script src="script/unicode-convert.js"></script>
+  </body>
+</html>

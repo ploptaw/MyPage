@@ -1,0 +1,127 @@
+button {
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 10px 0;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.convert-button {
+  background-color: #9281dd;
+}
+
+.convert-button:hover {
+  background-color: #7567b3;
+}
+
+.reverse-button {
+  background-color: #7a64dd;
+}
+
+.reverse-button:hover {
+  background-color: #6250b4;
+}
+
+.convert-andbutton {
+  background-color: #664bdd;
+}
+
+.convert-andbutton:hover {
+  background-color: #543eb4;
+}
+
+.copy-button {
+  background-color: #897c8f;
+}
+
+.copy-button:hover {
+  background-color: #58505c;
+}
+
+.delete-button {
+  background-color: #a01e1e;
+  width: 100px;
+  height: 45px;
+}
+
+.delete-button:hover {
+  background-color: #e53935;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.history-table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.history-table th,
+.history-table td {
+  padding: 12px;
+  text-align: left;
+  vertical-align: middle;
+  border-bottom: 1px solid #ddd;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.history-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.history-table th:nth-child(1),
+.history-table td:nth-child(1) {
+  width: 35%;
+}
+
+.history-table th:nth-child(2),
+.history-table td:nth-child(2) {
+  width: 35%;
+}
+
+.history-table th:nth-child(3),
+.history-table td:nth-child(3) {
+  width: 15%;
+  text-align: center;
+}
+
+.history-table th:nth-child(4),
+.history-table td:nth-child(4) {
+  width: 15%;
+  text-align: right;
+}
+
+.history-table td {
+  max-height: 80px;
+  overflow-y: auto;
+  font-size: 14px;
+}
+
+/* ダークモード */
+body.dark-mode .history-table {
+  background-color: #2d3436;
+  color: #f2f2f2;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .history-table th {
+  background-color: #34495e;
+  color: #ecf0f1;
+}
+
+body.dark-mode .history-table td {
+  border-color: #4a5568;
+}

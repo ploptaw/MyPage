@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lottery App</title>
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/lottery.css" />
+  </head>
+
+  <body>
+    <button class="home-button" onclick="window.location.href='index.html'">
+      戻る
+    </button>
+    <div class="dark-mode-container">
+      <span>Darkmode</span>
+      <div class="dark-mode-slider" onclick="toggleDarkMode()"></div>
+    </div>
+    <div class="container">
+      <h1>Lottery App</h1>
+      <div class="lottery-container">
+        <label for="range-input">数字の範囲</label>
+        <input
+          type="number"
+          id="range-input"
+          min="2"
+          max="100"
+          value="10"
+        /><br />
+
+        <button class="btn" id="start-btn">通常抽選</button>
+        <button class="btn" id="exclude-drawn-btn">除外抽選</button>
+        <button class="btn" id="reset-btn">リセット</button>
+
+        <div id="result">結果：</div>
+        <div id="history">当選済：</div>
+        <div id="left-over">未当選：</div>
+      </div>
+    </div>
+    <footer>&copy; 2024- ploptaw<br /></footer>
+    <script src="script/common.js"></script>
+    <script src="script/lottery.js"></script>
+  </body>
+</html>
